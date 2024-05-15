@@ -35,7 +35,7 @@
     <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
       <div class="container navbar w-container">
         <a href="index.html" aria-current="page" class="logo w-nav-brand w--current"><img src="images/logo-3.svg" loading="lazy" alt="Unrepped.AI Logo"></a>
-        <a href="#" class="button w-inline-block">
+        <a href="#subForm" class="button w-inline-block">
           <div>Join early</div><img src="images/Vector-9.svg" loading="lazy" alt="">
         </a>
         <div class="menu-button w-nav-button">
@@ -350,6 +350,31 @@
     // Observe the target element
     var target = document.querySelector('.number');
     observer.observe(target);
+
+
+    <script>
+
+const form = document.getElementById("subForm");
+
+// Add an event listener for form submission
+form.addEventListener("submit", function(event) {
+// Prevent the default form submission behavior
+event.preventDefault();
+
+// Get the value entered in the name input field
+const nameInput = document.getElementById("fieldName").value;
+
+// Store the name input value in sessionStorage
+sessionStorage.setItem("nameText", nameInput);
+
+// Additional actions can be performed here, such as sending the data to a server
+
+// Clear the input field if needed
+document.getElementById("fieldName").value = "";
+});
+
+
+</script>
 </script>
   <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 </body>
