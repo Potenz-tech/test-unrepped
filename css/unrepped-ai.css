@@ -1123,7 +1123,7 @@ body {
   }
 
   .gradiant-image {
-    margin-top: 94px;
+    margin-top: 40px;
   }
 
   .grid-wrap {
@@ -1239,12 +1239,13 @@ body {
   }
 
   .heading-wrap {
-    padding-top: 220px;
+    padding-top: 300px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .hero-heading {
+    min-height: 130px;
     height: 130px;
     font-size: 26px;
     line-height: 1.5;
